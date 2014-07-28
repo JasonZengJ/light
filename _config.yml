@@ -1,13 +1,20 @@
 menu:
   Home: /
   Archives: /archives
+  About: /
 
 widgets:
 - search
 - category
 - tag
+- links
 
 excerpt_link: Read More
+
+# Links
+links:
+  Dribble: https://dribbble.com
+  Awwwards: http://www.awwwards.com
 
 twitter:
   username:
@@ -15,7 +22,7 @@ twitter:
   tweet_count: 5
 
 addthis:
-  enable: true
+  enable: false
   pubid:
   facebook: true
   twitter: true
