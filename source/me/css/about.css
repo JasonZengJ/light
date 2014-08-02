@@ -1,0 +1,86 @@
+body {
+	
+  padding-top: 40px;
+  padding-bottom: 40px;
+  
+
+}
+
+@media screen and (max-width: 1280px) {
+ .avatar .image {
+   margin-left: 46%;
+  } 
+}
+
+@media screen and (min-width: 1336px) {
+ .avatar .image {
+   margin-left: 47%;
+  } 
+}
+
+.avatar .name,.avatar .subtitle,.avatar .github,.avatar .ps {
+  color: #ccc;
+  text-align: center;
+}
+
+.avatar {
+  z-index: 2;
+  position: absolute;
+  margin-top: 6%;
+  width: 100%;
+}
+
+.avatar .name {
+  font-size: 2.8em;
+  text-shadow: 1px 1px gray;
+}
+
+.avatar .subtitle {
+  margin-top: 20px;
+  font-size: 2.0em;
+}
+
+.avatar .ps {
+  margin-top: 10px;
+  font-size: 1.1em;
+  font-family:monospace;
+}
+
+
+.avatar .github {
+  margin-top: 8px;
+}
+
+.avatar .github .link {
+  font-size: 1.2em;
+  color: #ccc;
+}
+
+
+.background-motelayer {
+    z-index: 1;
+    background-color: black;
+    opacity: 0.5;
+    -moz-opacity: 0.5;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.background-img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-image: url("../images/bg_1.jpg");
+}
+

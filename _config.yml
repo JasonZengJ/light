@@ -1,6 +1,7 @@
 menu:
   Home: /
   Archives: /archives
+  Me: /me
 
 widgets:
 - search
@@ -15,6 +16,7 @@ links:
   Dribbble: https://dribbble.com
   Awwwards: http://www.awwwards.com
   Emmet: http://docs.emmet.io/
+  Hexo: http://hexo.io/
 
 twitter:
   username:
