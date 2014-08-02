@@ -8,7 +8,7 @@ body {
 
 @media screen and (max-width: 1280px) {
  .avatar .image {
-   margin-left: 46%;
+   margin-left: 45%;
   } 
 }
 
@@ -26,7 +26,7 @@ body {
 .avatar {
   z-index: 2;
   position: absolute;
-  margin-top: 6%;
+  margin-top: 5%;
   width: 100%;
 }
 
