@@ -18,7 +18,7 @@ body {
   } 
 }
 
-.avatar .name,.avatar .subtitle,.avatar .github,.avatar .ps {
+.avatar .name,.avatar .subtitle,.avatar .github,.avatar .ps,.avatar .github .link {
   color: #ccc;
   text-align: center;
 }
@@ -53,7 +53,6 @@ body {
 
 .avatar .github .link {
   font-size: 1.2em;
-  color: #ccc;
 }
 
 
