@@ -1,7 +1,6 @@
 menu:
   Home: /
   Archives: /archives
-  Me: /Me
 
 widgets:
 - search
