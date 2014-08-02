@@ -13,7 +13,8 @@
         success:function(data) {
           	data = JSON.parse(data);
             for (var i = 0; i < data.length; i++) {
-             	document.getElementById(data[i].path).innerHTML = data[i].count;
+            	var element = document.getElementById(data[i].path);
+             	if(element) element.innerHTML = data[i].count;
             };
         },
         error:function() {
