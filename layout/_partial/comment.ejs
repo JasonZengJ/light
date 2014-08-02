@@ -19,8 +19,21 @@ var duoshuoQuery = {short_name:"jasonlife"};
         var ds_tab = document.getElementsByClassName('ds-tab');
         ds_tab[1].removeChild(ds_tab[1].childNodes[0]);
      }, 500);
-      
+
+     $.ajax('viewerCount',{
+        success:function(data) {
+            data = JSON.parse(data);
+            document.getElementById(data.path).innerHTML = data.count;
+        },
+        error:function() {
+            console.log('error');
+
+        }
+     });
+     
   })();
+  
+
   </script>
   <style>
 

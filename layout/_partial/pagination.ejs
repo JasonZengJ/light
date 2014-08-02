@@ -6,4 +6,21 @@
     <a data-pjax href="<%- config.root %><%- page.next_link %>" class="alignright next"><%= __('next') %></a>
   <% } %>
   <div class="clearfix"></div>
+  <script type="text/javascript">
+  $(function(){
+
+  	$.ajax('allCount',{
+        success:function(data) {
+          	data = JSON.parse(data);
+            for (var i = 0; i < data.length; i++) {
+             	document.getElementById(data[i].path).innerHTML = data[i].count;
+            };
+        },
+        error:function() {
+            console.log('error');
+        }
+     });
+
+  });
+  </script>
 </nav>

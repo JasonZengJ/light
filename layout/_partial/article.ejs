@@ -18,6 +18,7 @@
       <% } %>
     </div>
     <footer>
+
       <% if (index){ %>
         <% if (item.excerpt){ %>
           <div class="alignleft">
@@ -26,7 +27,7 @@
         <% } %>
         <% if (item.comment || config.disqus_shortname){ %>
         <div class="alignright">
-          <a href="<%- item.permalink %>#disqus_thread" class="comment-link">Comments</a>
+          <a href="<%- config.root %><%- item.path %>#comments" class="comment-link" style="margin-left: 20px">Comments</a>
         </div>
         <% } %>
       <% } else { %>
@@ -34,11 +35,24 @@
 
         <%- partial('post/share') %>
       <% } %>
+      <div style="float: right">
+        <div  style="alignright" class="viewcount" id="<%= item.path%>">0</div>
+      </div>
       <%- partial('post/tag') %>
-      <%- item.excerpt%>
+
       <div class="clearfix"></div>
     </footer>
   </div>
+  <style type="text/css">
+    
+    article footer div.viewcount:before {
+      font: 1.1em FontAwesome;
+      padding-right: 10px;
+      vertical-align: middle;
+      content: '\f06e';
+    }
+  
+  </style>
 </article>
 
 <%- partial('comment') %>
