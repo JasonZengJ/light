@@ -8,13 +8,13 @@ body {
 
 @media screen and (max-width: 1280px) {
  .avatar .image {
-   margin-left: 45%;
+   margin-left: 44.5%;
   } 
 }
 
 @media screen and (min-width: 1336px) {
  .avatar .image {
-   margin-left: 47%;
+   margin-left: 46%;
   } 
 }
 
