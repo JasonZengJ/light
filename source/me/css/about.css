@@ -6,7 +6,7 @@ body {
 
 }
 
-@media screen and (max-width: 1280px) {
+/*@media screen and (max-width: 1280px) {
  .avatar .image {
    margin-left: 44.5%;
   } 
@@ -16,7 +16,7 @@ body {
  .avatar .image {
    margin-left: 46%;
   } 
-}
+}*/
 
 .avatar .name,.avatar .subtitle,.avatar .github,.avatar .ps,.avatar .github .link {
   color: #eee;
