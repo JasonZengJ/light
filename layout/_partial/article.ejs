@@ -25,6 +25,7 @@
             <a href="<%- config.root %><%- item.path %>#more" class="more-link"><%= theme.excerpt_link %></a>
           </div>
         <% } %>
+        <%- partial('post/tag') %>
         <% if (item.comment || config.disqus_shortname){ %>
         <div class="alignright" style = "margin: 5px 0px">
           <a href="<%- config.root %><%- item.path %>#comments" class="comment-link" style="margin-left: 20px;">Comments</a>
@@ -32,14 +33,12 @@
         <% } %>
       <% } else { %>
         <%- partial('post/category') %>
-
         <%- partial('post/share') %>
       <% } %>
+
       <div style="float: right;margin: 5px 0px">
         <div  style="alignright" class="viewcount" id="<%= item.path%>">0</div>
       </div>
-      <%- partial('post/tag') %>
-
       <div class="clearfix"></div>
     </footer>
   </div>

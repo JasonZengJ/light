@@ -9,7 +9,26 @@
     <div class="clearfix"></div>
   </div>
   <footer id="footer" class="inner"><%- partial('_partial/footer') %></footer>
+  <div id="back_top"><img width="130px" height="100px" src="back_tp.png"></div>
   </div>
+  <style type="text/css">
+
+
+    #back_top{
+        display: block;
+        right: 10%;
+        bottom: 10%;
+        position: fixed;
+        opacity: 0.5;
+        display: none;
+        --webkit-transition: opacity 0.3s;
+        transition: opacity 0.3s;
+    }
+    #back_top:hover{
+      cursor: pointer;
+      opacity: 1;
+    }
+  </style>
   <%- partial('_partial/after_footer') %>
 
 </body>
