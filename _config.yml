@@ -5,9 +5,9 @@ menu:
 
 widgets:
 - search
-- category
 - tag
 - links
+- recent_posts
 
 excerpt_link: Read More
 
