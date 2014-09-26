@@ -10,9 +10,13 @@
 				$('#back_top').css("display","block");
 				isShowed = true;
 				$('#back_top').on("click",function(){
-					document.body.scrollTop = 0;
-					document.documentElement.scrollTop = 0;
+					$('body,html').animate({scrollTop:0},400);
 				});
+				
+				// $('#back_top').on("click",function(){
+				// 	document.body.scrollTop = 0;
+				// 	document.documentElement.scrollTop = 0;
+				// });
 			};
 
 		}else{
