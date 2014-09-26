@@ -3,12 +3,14 @@
  	var isShowed = false;
    	$(window).scroll(function(e){
    		var scr = document.documentElement.scrollTop || document.body.scrollTop;
+   		//80
 		if (scr > 400) {
 			// $('#back_top').show(400);
+
 			if (!isShowed) {
 				//滑动到顶部
-				// $('#back_top').css("display","block");
-				// isShowed = true;
+				$('#back_top').css("display","block");
+				isShowed = true;
 				// $('#back_top').on("click",function(){
 				// 	$('body,html').animate({scrollTop:0},400);
 				// });
@@ -18,6 +20,7 @@
 					document.body.scrollTop = 0;
 					document.documentElement.scrollTop = 0;
 				});
+
 			};
 
 		}else{
@@ -27,9 +30,9 @@
 				$('#back_top').css("display","none");
 				$('#back_top').unbind("click");
 				isShowed = false;
+
 			};
 
-			// $('#back_top').hide(300);
 		}
 	});
 	$(document).pjax('a[data-pjax]', '.container', { fragment: '.container', timeout: 10000 });
