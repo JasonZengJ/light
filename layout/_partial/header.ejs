@@ -1,7 +1,7 @@
-<div id="header" class="inner">
+<div id="header" class="inner headerbar">
   <div class="alignleft">
     <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
-    <h2><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
+    <h2 class="display:none"><a href="<%- config.root %>"><% if (config.subtitle){ %><%= config.subtitle %><% } %></a></h2>
   </div>
   <nav id="main-nav" class="alignright">
     <ul>
@@ -15,3 +15,13 @@
   </nav>
   <div class="clearfix"></div>
 </div>
+
+<style type="text/css">
+  
+  .headerbar {
+    -webkit-transition: width 0.3s;
+    -o-transition: width 0.3s;
+    transition: width 0.3s;
+  }
+
+</style>

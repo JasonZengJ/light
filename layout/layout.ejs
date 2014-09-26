@@ -4,6 +4,28 @@
   
   <div class = "container">
   <header class = "page-header"><%- partial('_partial/header') %></header>
+
+  <div id="navbar" class = "navbar_background">
+
+    <div class=" inner">
+      
+      <div class="alignleft">
+        <h1><a href="<%- config.root %>"><%= config.title %></a></h1>
+      </div>
+      <nav id="main-nav" class="alignright">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <% for (var i in theme.menu){ %>
+            <li><a href="<%- theme.menu[i] %>"><%= i %></a></li>
+          <% } %>
+            <li><a href="/me/">Me</a></li>
+        </ul>
+      </nav>
+
+    </div>
+      
+</div>
+
   <div id="content" class="inner">
     <div id="main-col" class="alignleft"><div id="wrapper"><%- body %></div></div>
     <aside id="sidebar" class="alignright"><%- partial('_partial/sidebar') %></aside>
@@ -13,6 +35,16 @@
     <div id="back_top"><img width="64px" height="64px" src="images/arrow_up.png"></div>
   </div>
   <style type="text/css">
+
+    .navbar_background {
+      width: 100%;
+      position: fixed;
+      top: 0;
+      background-color: #20acce;
+      opacity: 0.9;
+      z-index: 999;
+      display: none;
+    }
 
     #back_top{
         display: block;
