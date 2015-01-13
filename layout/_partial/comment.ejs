@@ -1,6 +1,19 @@
 <% if (page.comments){ %>
 <section id="comment">
+<script type="text/javascript">
+	
+	 $.ajax('viewerCount',{
+        success:function(data) {
+            data = JSON.parse(data);
+            document.getElementById(data.path).innerHTML = data.count;
+        },
+        error:function() {
+            console.log('error');
 
+        }
+     });
+	
+</script>
 
 </section>
 <% } %>
