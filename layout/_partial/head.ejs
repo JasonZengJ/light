@@ -37,6 +37,12 @@
     <meta property="og:image" content="<%= config.cover %>"/>
   <% } %>
   <link rel="shortcut icon" type="image/x-icon" href="<%- config.root %>favicon.ico" mce_href="<%- config.root %>favicon.ico">
+  <link rel="icon" sizes="192x192" href="<%- config.root %>favicon.ico"> 
+  <link rel="apple-touch-icon-precomposed" href="<%- config.root %>favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="76x76" href="<%- config.root %>favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="120x120" href="<%- config.root %>favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="152x152" href="<%- config.root %>favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="180x180" href="<%- config.root %>favicon.ico">
   <link rel="alternate" href="<% if (theme.rss){ %><%- theme.rss %><% } else { %><%- config.root %>atom.xml<% } %>" title="<%= config.title %>" type="application/atom+xml">
   <link rel="stylesheet" href="<%- config.root %>css/blue_simple/style.css" media="screen" type="text/css">
   <script src="<%- config.root %>js/jquery-2.1.1.min.js"></script>
